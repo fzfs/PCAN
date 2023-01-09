@@ -5,4 +5,4 @@ Automatic chest X-ray (CXR) disease classification has drawn increasing public a
 ### Train
 CUDA_VISIBLE_DEVICES=0,1 python train.py --lr 0.07 --batch_size 64 --epochs 15 --avg 0 --weight 1 --truncated 1 --image_size 224 --milestone 10,12
 ### Test
-CUDA_VISIBLE_DEVICES=0 test.py --lr 0.07 --batch_size 64 --avg 0 --weight 1 --truncated 1 --image_size 224 --tm 483607
+CUDA_VISIBLE_DEVICES=0 python test.py --lr 0.07 --batch_size 64 --avg 0 --weight 1 --truncated 1 --image_size 224 --tm 483607
